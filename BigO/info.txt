@@ -1,0 +1,7 @@
+Complexity O(n)
+---------------
+- input size(n) >= 0
+- functions do more work for more inputs
+- drop all constants/scaling factors Ex: 3n -> n   or   40n -> n
+- drop lower order terms  Ex: n^3 + n^2 + n  -> n^3
+- ingnore the base of logs

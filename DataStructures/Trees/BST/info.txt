@@ -1,0 +1,64 @@
+
+
+Binary Search Trees (BST)
+-------------------------
+
+Definition:
+A Binary Search Tree (BST) is a data structure that stores "nodes" (data elements) in a hierarchical structure. 
+Each node contains a key (value), pointers to left and right children, and sometimes a pointer to its parent. 
+BSTs maintain the property that for any given node with a key k, all keys in the left subtree are less than k, 
+and all keys in the right subtree are greater than k.
+
+Uses Cases:
+1. Implementing dynamic sets, maps, or associative arrays.
+2. Database indexing, where quick search, insertion, and deletion are needed.
+3. Autocomplete features in applications.
+4. Sorting algorithms like tree sort.
+5. In network routers and filesystems for fast lookup.
+
+Advantages:
+1. Efficient Searching: Provides O(log n) search time on average.
+2. Ordered Data: In-order traversal of BST yields elements in sorted order.
+3. Flexibility: Easy to implement insertions and deletions while maintaining order.
+
+Disadvantages:
+1. Worst-Case Performance: Degenerates to a linked list in the worst case (O(n) operations).
+2. Space Requirement: Requires extra space for storing child pointers.
+3. Complexity: More complex to implement and maintain than arrays or linked lists.
+4. Balancing: Without balancing, performance can degrade over time.
+
+Complexity of Operations:
+1. Search: O(log n) average, O(n) worst-case.
+2. Insertion: O(log n) average, O(n) worst-case.
+3. Deletion: O(log n) average, O(n) worst-case.
+4. Access: Not direct; needs traversal, O(log n) average, O(n) worst-case.
+5. Traversal (In-order, Pre-order, Post-order): O(n) as it visits every node.
+
+Text Visual Example:
+    4
+   / \
+  2   6
+ / \ / \
+1  3 5  7
+
+In this tree:
+- The root node is 4.
+- Nodes 2, 1, and 3 are in the left subtree.
+- Nodes 6, 5, and 7 are in the right subtree.
+- Each child node to the left is less than its parent, and each child node to the right is greater.
+
+Balancing Trees:
+To overcome the disadvantage of worst-case scenarios, balanced BSTs like AVL trees or Red-Black trees are used. 
+These trees ensure that the height of the tree remains O(log n) even after multiple insertions and deletions, 
+thus maintaining the average complexity for operations.
+
+BST Variants:
+1. AVL Tree: A self-balancing BST where the difference between heights of left and right subtrees cannot be more than one.
+2. Red-Black Tree: A self-balancing BST with an extra bit for color, used to ensure balancing during insertions and deletions.
+3. Splay Tree: A self-adjusting BST that moves frequently accessed elements closer to the root.
+4. Treap: A randomized BST that also maintains a heap property.
+
+Conclusion:
+BSTs offer a balance between speed and flexibility for ordered data. Their efficiency lies in their ability to 
+reduce the search space with each comparison, making them suitable for many applications that require 
+ordered data storage and fast retrieval.

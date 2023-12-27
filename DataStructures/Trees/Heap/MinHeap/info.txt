@@ -1,0 +1,57 @@
+
+
+Heaps: An Overview
+
+What is a Heap?
+----------------
+A heap is a specialized tree-based data structure that satisfies the heap property. In a max heap, for any given node I, the value of I is greater than or equal to the values of its children. Conversely, in a min heap, the value of I is less than or equal to the values of its children.
+
+Use Cases:
+----------
+1. Priority Queues: Heaps are used to implement priority queues, allowing for efficient access to the highest or lowest priority element.
+2. Heap Sort: Utilizing the heap's properties for efficient sorting algorithms.
+3. Graph Algorithms: In algorithms like Dijkstra's and Prim's, heaps (often implemented as priority queues) are used for efficient information retrieval.
+4. Order Statistics: Finding the Kth smallest or largest element in a dataset.
+
+Advantages:
+-----------
+1. Time Efficiency: Operations like insertion, deletion, and accessing the min/max element are efficient.
+2. Memory Usage: Heaps are memory-efficient as they can be implemented using arrays.
+
+Disadvantages:
+--------------
+1. Slow Worst-Case Operations: Some operations have slower worst-case times compared to other data structures.
+2. Unordered: Heaps do not order elements, which means finding any element other than the min/max requires traversing the heap.
+
+Time Complexities:
+------------------
+1. Insertion: O(log n)
+2. Deletion: O(log n)
+3. Accessing Min/Max Element: O(1)
+4. Heapify: O(n)
+5. Search: O(n) - since the heap is not ordered
+
+Visual Example of a Min Heap:
+-----------------------------
+Initial Heap:
+       5
+     /   \
+    7     6
+   / \   / \
+  9   8 10  11
+
+After inserting '4':
+       4
+     /   \
+    7     5
+   / \   / \
+  9   8 10   6
+ / \
+11  7
+
+After deleting the minimum (4):
+       5
+     /   \
+    7     6
+   / \   / \
+  9   8 10  11

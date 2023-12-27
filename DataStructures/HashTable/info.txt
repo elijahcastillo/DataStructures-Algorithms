@@ -1,0 +1,65 @@
+
+
+Hashmaps: A Comprehensive Guide
+
+Introduction
+------------
+
+A hashmap, also known as a hash table, is a data structure that stores data in an associative manner. In a hashmap, data is stored in an array format, where each data value has its own unique key. The efficiency of a hashmap comes from its ability to convert these keys into indices of an array using a hash function.
+
+Advantages
+----------
+
+1. **Fast Access**: Hashmaps provide constant time complexity, O(1), for basic operations like insertion, deletion, and searching in the average case.
+2. **Efficient Memory Usage**: They make efficient use of memory because they dynamically resize based on the amount of data.
+3. **Unordered**: Hashmaps store data in an unordered manner which can be beneficial for certain algorithms that don’t require data ordering.
+
+Disadvantages
+-------------
+
+1. **Collision**: The scenario where the hash function maps two different keys to the same array index. This requires additional handling.
+2. **Unpredictable Order**: The data in a hashmap is stored in an unpredictable order, which can be a downside for applications requiring ordered data.
+3. **Memory Overhead**: In some implementations, hashmaps can have a significant memory overhead due to the underlying array structure and collision handling mechanisms.
+
+Use Cases
+---------
+
+1. **Unique Item Storage**: Ideal for storing unique items where the order of elements is not important.
+2. **Lookup Tables**: Frequently used in lookup tables where quick search is necessary.
+3. **Database Indexing**: Employed in database indexing to quickly locate data records.
+
+O(n) Complexity for Different Operations
+-----------------------------------------
+
+1. **Insertion**: O(1) in the average case; O(n) in the worst case (due to collisions).
+2. **Deletion**: O(1) in the average case; O(n) in the worst case.
+3. **Search**: O(1) in the average case; O(n) in the worst case.
+
+Examples
+--------
+
+1. **Creating a Simple Hashmap**: In C++
+
+    std::map<key, value> hashmap;
+    hashmap[key] = value;
+
+2. **Handling Collisions**  2 Methods:
+
+    Method 1 (Linked Lists):
+    # In chaining, each slot of the hashmap array contains a linked list.
+    # Different keys that hash to the same index are stored in the list at that index.
+    # If a collision occurs we add the key value pair to that linked list
+    # When looking up that key we have to iterate through the linked list
+
+
+
+    Method 2 (Linear Probing):
+    # We a collision occurs keep looking foward in the array
+    # until and unoccupied spot is found
+    # When looking up the key we will have to iterate from the
+    # hased index checking untill we find the right key
+
+Conclusion
+----------
+
+Hashmaps are a versatile and efficient data structure ideal for situations where quick access to data is necessary. Understanding their advantages, disadvantages, and use cases is crucial for effective programming and system design.

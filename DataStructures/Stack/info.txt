@@ -1,0 +1,50 @@
+
+
+Stack Data Structure
+--------------------
+
+A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. The element added last to the stack will be the one to be removed first.
+
+Basic Operations:
+1. Push: Adds an element to the top of the stack.
+2. Pop: Removes the top element from the stack.
+3. Top/Peek: Returns the top element of the stack without removing it.
+4. IsEmpty: Checks whether the stack is empty.
+5. Size: Returns the number of elements in the stack.
+
+Visual Representation:
+Initially: |   |
+           -----
+After Push:| 3 |
+           | 2 |
+           | 1 |
+           -----
+After Pop: | 2 |
+           | 1 |
+           -----
+
+Advantages:
+1. Simple and easy to implement.
+2. Provides Last In, First Out access, which is useful in certain algorithms like recursion handling, undo mechanisms in software, etc.
+3. Fast operations: Pushing and popping take O(1) time.
+
+Disadvantages:
+1. Limited functionality: Only provides access to the top element.
+2. Fixed size (for array-based implementation): Can lead to stack overflow if the stack size exceeds its capacity.
+3. Dynamic memory allocation (for linked list-based implementation) can be more complex and less cache-friendly.
+
+Use Cases:
+1. Undo functionality in text editors.
+2. Backtracking algorithms (like maze solving, puzzle games).
+3. Memory management, Call stack during function calls and recursion.
+4. Syntax parsing in compilers.
+5. Evaluating expressions (like postfix/prefix).
+
+Time Complexity:
+1. Push: O(1) - Adding an element at the top of the stack.
+2. Pop: O(1) - Removing the top element.
+3. Top/Peek: O(1) - Accessing the top element.
+4. IsEmpty: O(1) - Checking if the stack is empty.
+5. Size: O(1) - Getting the number of elements.
+
+In conclusion, stacks are a fundamental data structure in computer science, used in a variety of applications due to their efficiency and simplicity.

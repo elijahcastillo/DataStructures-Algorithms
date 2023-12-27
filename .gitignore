@@ -1,0 +1,2 @@
+# Ignore .exe files in any folder or subfolder
+**/*.exe

@@ -1,0 +1,55 @@
+//       Rules
+//---------------------
+// - Every node is red or black
+// - Root is always black
+// - New insertions are always red (initially)
+// - Every path from root -> left has the same number of black nodes
+// - No path can have 2 consecutive Red Nodes (but can have 2 black)
+// - Null nodes are black
+//
+//
+//     ReBalance
+//---------------------
+// - Black Aunt: Rotate
+//
+//         Black
+//         /  \
+//       Red  Red
+//
+//
+// - Red Aunt: Color Flip
+//           Red
+//          /  \
+//      Black Black
+
+
+
+Aunt:
+
+node -> parent -> grandparent -> aunt;
+
+
+//       Rules
+//---------------------
+// - Every node is red or black
+// - Root is always black
+// - New insertions are always red (initially)
+// - Every path from root -> left has the same number of black nodes
+// - No path can have 2 consecutive Red Nodes (but can have 2 black)
+// - Null nodes are black
+//
+//
+//     ReBalance
+//---------------------
+// - Black Aunt: Rotate
+//
+//         Black
+//         /  \
+//       Red  Red
+//
+//
+// - Red Aunt: Color Flip
+//           Red
+//          /  \
+//      Black Black
+

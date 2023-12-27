@@ -1,0 +1,25 @@
+# Binary Search
+# Merge Sort
+# Quick Sort
+
+#Greedy Algorithm
+
+#BFS DFS
+
+Tree traversal algorithms
+Ex. in-order, pre-order, and post-order traversal
+
+Shortest path algorithms
+Ex. Dijkstra’s algorithm and Bellman-Ford algorithm
+
+Minimum spanning tree algorithms
+Ex. Kruskal’s algorithm and Prim’s algorithm
+
+Graph search algorithms 
+Ex. breadth-first search and depth-first search
+
+Hashing algorithms
+Ex. SHA-1 and MD5
+
+Sorting algorithms
+Ex. heapsort and quicksort
